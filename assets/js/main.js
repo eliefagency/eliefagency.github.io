@@ -629,6 +629,15 @@
              $('html, body').animate({ scrollTop: 0 }, 800);
              return false;
          });
+
+        // bm: show/hide whatsapp button when scrolling
+        //  $(window).on('scroll', function () {
+        //     if ($(this).scrollTop() > 20) {
+        //         $("#whatsapp-float").addClass("show");
+        //     } else {
+        //         $("#whatsapp-float").removeClass("show");
+        //     }
+        // });
       
     }); // End Document Ready Function
     

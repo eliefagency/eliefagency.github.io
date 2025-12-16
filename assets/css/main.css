@@ -5628,7 +5628,7 @@ input.main-search-input::placeholder {
   display: inline-block;
   z-index: 999;
   right: 30px;
-  bottom: 30px;
+  bottom: 90px;
   transition: all 0.4s ease-in-out;
   opacity: 0;
   visibility: hidden;
@@ -9630,4 +9630,53 @@ input.main-search-input::placeholder {
         justify-content: center;
     }
 }
+
+
+/* WhatsApp floating button - like back-to-top button*/
+.whatsapp-float {
+  /* Shape & color */
+  border-radius: 50%;
+  background-color: #25D366;
+
+  /* Size */
+  width: 50px;
+  height: 50px;
+
+  /* Position */
+  position: fixed;
+  right: 30px;
+  bottom: 30px; /* Under back-to-top button */
+
+  /* Center icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Layer & animation */
+  z-index: 999;
+  transition: all 0.4s ease-in-out;
+
+  /* Hidden by default */
+    /* NOTE : don't forgot to uncomment its logic too in main.js*/
+  /* opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px); */
+}
+/* WhatsApp icon */
+.whatsapp-float i {
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+}
+/* Hover effect */
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+}
+/* Visible state on scroll */
+    /* NOTE : don't forgot to uncomment its logic too in main.js*/
+/* .whatsapp-float.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0);
+} */
 
