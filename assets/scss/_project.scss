@@ -19,7 +19,7 @@
 
     .overlay-bg {
        @include before;
-       background: linear-gradient(180deg, rgba(153, 35, 0, 0.00) 0%, #FF3B00 100%);
+       background: linear-gradient(180deg, rgba(153, 35, 0, 0.00) 0%, #fd0013 100%);
        visibility: hidden;
        transition: all .6s ease;
     }

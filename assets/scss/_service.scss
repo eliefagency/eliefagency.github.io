@@ -473,7 +473,7 @@
 
         &::before {
             @include before;
-            background: linear-gradient(180deg, #FF3B00 0%, rgba(0, 6, 12, 0) 100%);
+            background: linear-gradient(180deg, #fd0013 0%, rgba(0, 6, 12, 0) 100%);
             opacity: 0.9;
         }
 
@@ -1512,7 +1512,7 @@
                 width: 2px;
                 height: 21px;
                 position: absolute;
-				background-color: #FF3B00;
+				background-color: #fd0013;
             }
 
             h4 {

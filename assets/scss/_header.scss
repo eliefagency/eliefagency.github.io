@@ -286,7 +286,7 @@
 }
 
 .header-top {
-	background-color: #171A2B;
+	background-color: #000000;
 	padding: 10px 0;
 
 	@include breakpoint (max-lg){
@@ -598,7 +598,7 @@
     }
 
 	&.inner-header {
-		background-color: #171A2B;
+		background-color: #000000;
 	}
 }
 
