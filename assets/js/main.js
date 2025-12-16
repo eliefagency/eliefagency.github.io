@@ -153,10 +153,10 @@
 
         const projectSlider3 = new Swiper(".project-slider-3", {
             spaceBetween: 30,
-            speed: 1500,
+            speed: 3500,
             loop: true,
             autoplay: {
-                delay: 1500,
+                delay: 3500,
                 disableOnInteraction: false,
             },
             pagination: {
