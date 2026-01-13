@@ -14,7 +14,7 @@ Version: 1.0.0
   --white: #fff;
   --theme: #fd0013;
   --theme2: #FFA31A;
-  --theme3: #2B4DFF;
+  --theme3: #fd0013;
   --header: #05091D;
   --text: #7A7A7A;
   --border: #d7d7d7;
@@ -757,6 +757,28 @@ span {
   font-weight: 500;
   margin-top: -2px;
 }
+.about-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px;
+}
+.about-vision h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-vision p {
+    font-size: 15px;
+    color: #555;
+}
+
 .about-wrapper-11.style-2 .about-image-items .circle-shape {
   position: absolute;
   top: 0;
@@ -2144,13 +2166,13 @@ span {
   background-color: #F4F4F4;
 }
 
-.faq-wrapper-3 .faq-image {
+/* .faq-wrapper-3 .faq-image {
   margin-top: 30px;
 }
 .faq-wrapper-3 .faq-image img {
   width: 100%;
   height: 100%;
-}
+} */
 .faq-wrapper-3 .faq-items {
   margin-left: 50px;
   margin-top: 30px;
@@ -2605,7 +2627,7 @@ span {
   color: var(--theme);
 }
 .footer-widget-wrapper .single-footer-widget .footer-content .social-icon {
-  gap: 17px;
+  gap: 30px;
 }
 .footer-widget-wrapper .single-footer-widget .footer-content .social-icon a {
   width: 40px;
@@ -2651,6 +2673,25 @@ span {
 .footer-widget-wrapper .single-footer-widget .list-items li:hover a::after {
   background-color: var(--theme);
 }
+.footer-widget-wrapper .single-footer-widget .footer-contact{
+  margin-top: 50px;
+}
+.footer-widget-wrapper .single-footer-widget .footer-contact li a{
+  color: var(--text);
+  font-size: 15px;
+  font-family: inherit;
+   font-weight: bold;
+  
+}
+.footer-widget-wrapper .single-footer-widget .footer-contact li a:hover{
+      color: var(--theme);
+}
+.footer-widget-wrapper .single-footer-widget p{
+    color: var(--text);
+    font-family:inherit;
+    font-size: 15px;
+       font-weight: bold;
+}
 
 .footer-bottom {
   position: relative;
@@ -2675,19 +2716,19 @@ span {
 .footer-bottom .footer-wrapper p a {
   color: var(--theme);
 }
-.footer-bottom .footer-wrapper .footer-menu {
+/* .footer-bottom .footer-wrapper .footer-menu {
   display: flex;
   align-items: center;
   gap: 20px;
-}
-@media (max-width: 991px) {
+} */
+/* @media (max-width: 991px) {
   .footer-bottom .footer-wrapper .footer-menu {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center !important;
   }
-}
-.footer-bottom .footer-wrapper .footer-menu li a {
+} */
+/* .footer-bottom .footer-wrapper .footer-menu li a {
   color: var(--text);
   background-image: linear-gradient(var(--theme), var(--theme));
   background-position: 0 95%;
@@ -2695,11 +2736,11 @@ span {
   background-size: 0% 2px;
   display: inline-block;
   transition: all 0.4s ease-in-out;
-}
-.footer-bottom .footer-wrapper .footer-menu li a:hover {
+} */
+/* .footer-bottom .footer-wrapper .footer-menu li a:hover {
   background-size: 100% 1px;
   color: var(--theme);
-}
+} */
 
 .footer-section-3 {
   margin: 0 180px;
@@ -6892,16 +6933,16 @@ input.main-search-input::placeholder {
 }
 
 .section-padding {
-  padding: 120px 0;
+  padding: 50px 0;
 }
 @media (max-width: 1199px) {
   .section-padding {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 }
 @media (max-width: 991px) {
   .section-padding {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 }
 
@@ -9604,15 +9645,26 @@ input.main-search-input::placeholder {
 }
 /* Grid container */
 .partners-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 48px; /* Space between partners */
+    /* display: grid; */
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    gap: 48px; /* Space between partners*/
     align-items: center;
     margin-top: 48px;
+    animation: slide 20s linear infinite;
 }
+/* Make each partner card only as wide as its content */
+.partners-grid .swiper-slide {
+  width: auto !important;
+}
+.partners-section .container {
+    overflow: hidden;       /* cacher le débordement */
+}
+
 /* One partner card */
 .partner-card {
     display: flex;
+    flex: 0 0 auto;   /*  */
     align-items: center;
     gap: 16px; /* Space between logo and name */
     padding: 16px 20px;
@@ -9628,8 +9680,8 @@ input.main-search-input::placeholder {
 }
 /* Partner logo */
 .partner-logo {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     flex-shrink: 0; /* Prevent logo from shrinking */
 }
@@ -9702,17 +9754,21 @@ input.main-search-input::placeholder {
   align-items: flex-start;
   gap: 10px;
 }
-.footer-contact li i {
+/* .footer-contact li i {
   font-size: 16px;
   min-width: 18px;
   margin-top: 3px;
   color: var(--theme);
-}
+} */
 .footer-contact li span,
 .footer-contact li a {
   line-height: 1.5;
 }
 .footer-contact li span {
-  margin-top: 0; /* overrides theme */
+  margin-top: 10; /* overrides theme */
+}
+.footer-contact li {
+    list-style: none;
+    margin-bottom: 10px;
 }
 
