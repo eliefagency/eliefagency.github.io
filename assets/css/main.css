@@ -9682,11 +9682,6 @@ input.main-search-input::placeholder {
     }
 }
 
-.partners-section .container {
-    overflow: hidden;
-}
-
-
 /* One partner card */
 .partner-card {
     display: flex;
