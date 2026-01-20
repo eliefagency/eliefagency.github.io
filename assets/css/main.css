@@ -9661,6 +9661,27 @@ input.main-search-input::placeholder {
     overflow: hidden;       /* cacher le débordement */
 }
 
+.partners-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 50s linear infinite;
+    will-change: transform;
+}
+
+/* Pause animation when hovering */
+.partners-section .partners-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 /* One partner card */
 .partner-card {
     display: flex;
@@ -9680,8 +9701,8 @@ input.main-search-input::placeholder {
 }
 /* Partner logo */
 .partner-logo {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 80px;
     object-fit: contain;
     flex-shrink: 0; /* Prevent logo from shrinking */
 }
