@@ -9648,23 +9648,24 @@ input.main-search-input::placeholder {
     /* display: grid; */
     display: flex;
     /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-    gap: 48px; /* Space between partners*/
+    /*gap: 48px;  Space between partners*/
     align-items: center;
     margin-top: 48px;
-    animation: slide 20s linear infinite;
+    /* animation: slide 20s linear infinite; */
 }
 /* Make each partner card only as wide as its content */
-.partners-grid .swiper-slide {
+/* .partners-grid .swiper-slide {
   width: auto !important;
-}
+} */
 .partners-section .container {
     overflow: hidden;       /* cacher le débordement */
 }
 
 .partners-track {
     display: flex;
+    gap: 80px; /* space between items */
     width: max-content;
-    animation: marquee 50s linear infinite;
+    animation: marquee 70s linear infinite;
     will-change: transform;
 }
 
@@ -9716,6 +9717,13 @@ input.main-search-input::placeholder {
 @media (max-width: 576px) {
     .partner-card {
         justify-content: center;
+    }
+    .partner-logo {
+      width: 80px;
+      height: 80px;
+  }
+    .partners-track {
+        gap: 24px;
     }
 }
 
