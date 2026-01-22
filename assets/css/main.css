@@ -9648,23 +9648,24 @@ input.main-search-input::placeholder {
     /* display: grid; */
     display: flex;
     /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-    gap: 48px; /* Space between partners*/
+    /*gap: 48px;  Space between partners*/
     align-items: center;
     margin-top: 48px;
-    animation: slide 20s linear infinite;
+    /* animation: slide 20s linear infinite; */
 }
 /* Make each partner card only as wide as its content */
-.partners-grid .swiper-slide {
+/* .partners-grid .swiper-slide {
   width: auto !important;
-}
+} */
 .partners-section .container {
     overflow: hidden;       /* cacher le débordement */
 }
 
 .partners-track {
     display: flex;
+    gap: 80px; /* space between items */
     width: max-content;
-    animation: marquee 50s linear infinite;
+    animation: marquee 70s linear infinite;
     will-change: transform;
 }
 
@@ -9716,6 +9717,13 @@ input.main-search-input::placeholder {
 @media (max-width: 576px) {
     .partner-card {
         justify-content: center;
+    }
+    .partner-logo {
+      width: 80px;
+      height: 80px;
+  }
+    .partners-track {
+        gap: 24px;
     }
 }
 
@@ -9791,5 +9799,108 @@ input.main-search-input::placeholder {
 .footer-contact li {
     list-style: none;
     margin-bottom: 10px;
+}
+
+
+/* la section : Elief en quelques chiffres */
+.staggered-wrapper {
+  /* Space for the boxes sliding down */
+  padding-bottom: 100px; 
+}
+/* Creating the white space between boxes */
+.staggered-wrapper [class*="col-"] {
+  /* To creates the white "gutters" (like: the brochure) */
+  padding: 10px; 
+}
+/* --- Typography & Elements --- */
+.brochure-title {
+  font-weight: 900 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  letter-spacing: -1.5px;
+  font-size: 42px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+}
+.bg-red {
+  background-color: var(--theme);
+}
+.stat-block {
+  background-color:#f8f9fa; /* = 'bg-light' bootstrap */
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Soft shadow for the whole block */
+}
+/* Text Containers */
+.stat-content {
+  color: #ffffff;
+  padding: 50px 20px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* The Big Numbers (+100, +150, +250, 4) */
+.stat-number {
+  color: #ffffff !important;
+  font-size: 85px; 
+  font-weight: 900 !important;
+  line-height: 0.8;
+  margin: 0;
+  letter-spacing: -4px;
+  font-family: 'Montserrat', sans-serif !important;
+}
+/* Labels (Collaborateurs, Projets...) */
+.stat-label {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 15px;
+  letter-spacing: -0.5px;
+  font-family: 'Montserrat', sans-serif !important;
+}
+.stat-unit {
+  font-size: 35px;
+  margin-left: 8px;
+  letter-spacing: -1px;
+}
+/* Image Containers */
+.stat-image {
+  height: 300px;
+  width: 100%;
+}
+.stat-image img {
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+}
+/* Phone Circle & Phone Shadow */
+.phone-mockup-circle {
+  width: 220px;
+  height: 220px;
+  background-color: var(--theme);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 15px 25px 20px rgba(0, 0, 0, 0.6); /* Shadow to right-bottom */
+}
+.phone-mockup-circle img {
+  width: auto;
+  height: 85%;
+  object-fit: contain;
+  filter: drop-shadow(10px 15px 12px rgba(0, 0, 0, 0.35)); /* Shadow to right-bottom on png */
+}
+/* Mobile Adjustments */
+@media (max-width: 991px) {
+  .stat-content {
+      min-height: auto;
+      padding: 40px 20px;
+  }
+  .stat-number {
+      font-size: 65px;
+  }
 }
 
