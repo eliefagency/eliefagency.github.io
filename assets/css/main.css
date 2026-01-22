@@ -9825,6 +9825,7 @@ input.main-search-input::placeholder {
   background-color: var(--theme);
 }
 .stat-block {
+  background-color:#f8f9fa; /* = 'bg-light' bootstrap */
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -9871,7 +9872,7 @@ input.main-search-input::placeholder {
 }
 .stat-image img {
   width: 100%;
-  height: 100%;
+  height: 110%;
   object-fit: cover;
 }
 /* Phone Circle & Phone Shadow */
@@ -9884,7 +9885,7 @@ input.main-search-input::placeholder {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.15); /* Shadow to right-bottom */
+  box-shadow: 15px 25px 20px rgba(0, 0, 0, 0.6); /* Shadow to right-bottom */
 }
 .phone-mockup-circle img {
   width: auto;
