@@ -9801,3 +9801,87 @@ input.main-search-input::placeholder {
     margin-bottom: 10px;
 }
 
+
+/* la section : Elief en quelques chiffres */
+.brochure-title {
+  font-weight: 900 !important;
+  font-family: 'Montserrat', sans-serif; /* Adjust : Poppins/Inter */
+  letter-spacing: -1.5px;
+  font-size: 38px;
+  color: #1a1a1a;
+}
+.bg-red {
+  background-color: var(--theme);
+}
+.stat-block {
+  height: 100%;
+  overflow: hidden;
+}
+/* Text Containers */
+.stat-content {
+  color: #ffffff;
+  padding: 35px 25px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* The Big Numbers (+100, +150, +250, 4) */
+.stat-number {
+  color: #ffffff;
+  font-size: 65px;
+  font-weight: 900 !important;
+  line-height: 0.8;
+  margin: 0;
+  letter-spacing: -3px;
+  font-family: sans-serif; /* Forces a clean heavy look */
+}
+/* Labels (Collaborateurs, Projets...) */
+.stat-label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 10px;
+  letter-spacing: -0.5px;
+}
+.stat-unit {
+  font-size: 30px;
+  margin-left: 5px;
+  letter-spacing: -1px;
+}
+/* Image Containers */
+.stat-image {
+  height: 250px;
+  width: 100%;
+}
+.stat-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Special Case for the Phone Mockup */
+.phone-mockup-circle {
+  width: 190px;
+  height: 190px;
+  background-color: var(--theme);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.phone-mockup-circle img {
+  width: auto;
+  height: 90%;
+  object-fit: contain;
+}
+/* Mobile Adjustments */
+@media (max-width: 991px) {
+  .stat-content {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+  .stat-number {
+    font-size: 55px;
+  }
+}
